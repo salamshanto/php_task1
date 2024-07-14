@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .update-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        .update-container h2 {
+            margin-bottom: 20px;
+        }
+        .update-container input[type="password"],
+        .update-container input[type="email"],
+        .update-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .update-container input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .update-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="update-container">
+        <h2>Update Information</h2>
+        <form action="editinfo.php" method="post">
+            New Password: <input type="password" name="password"><br>
+            New Email: <input type="email" name="email"><br>
+            New First Name: <input type="text" name="first_name"><br>
+            New Last Name: <input type="text" name="last_name"><br>
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>

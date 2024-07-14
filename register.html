@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .register-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+        .register-container input[type="text"],
+        .register-container input[type="password"],
+        .register-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .register-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .register-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="register.php" method="post">
+            Username: <input type="text" name="username" required><br>
+            Password: <input type="password" name="password" required><br>
+            Email: <input type="email" name="email" required><br>
+            First Name: <input type="text" name="first_name"><br>
+            Last Name: <input type="text" name="last_name"><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
